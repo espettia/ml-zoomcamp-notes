@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+docker build -t diabetes-prediction-project-ml-zoomcamp .
+docker run -it --rm -p 9696:9696 diabetes-prediction-project-ml-zoomcamp
+
