@@ -75,6 +75,19 @@ Interestingly, heavy alcohol consumption is slightly related to not having diabe
 |anyhealthcare          | 0.000120|
 
 According to the mutual information score, the most powerful indicators are general health, high blood presure, age, high cholesterol and difficulty walking.
+|CORRELATION |  |
+|------------|--|
+|feature | score |
+|bmi        |  0.216998|
+|age        |  0.175756|
+|physhlth   |  0.170857|
+|menthlth   |  0.068832|
+|education  | -0.123274|
+|income     | -0.162109|
+
+Body Max Index have a positive moderate correlation with the target. The more body index mass, the more likely to have diabetes
+The other numerical values have low correlation.
+
 ## Model training 
 Three models were trained and compared to find the most accurate according to the ROC AUC score. The following are the results of the models trained on the complete dataset:
 | Model | ROC AUC score | Parameters |
