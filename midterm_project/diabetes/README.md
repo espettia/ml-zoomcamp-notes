@@ -33,8 +33,8 @@ The dataset consists on the following features:
 |Income		|	Income scale (INCOME2 see codebook) scale 1-8 1 = less than $10,000 5 = less than $35,000 8 = $75,000 or more		no|
 ## EDA
 Three scores were used to measure feature importance. According to the following results,
-| RISK RATIO |
-|--------------------------------------|
+| RISK RATIO | | |
+|----------|----------------|------------|
 |                 Feature |         0 |         1 |max |
 |   heartdiseaseorattack| 0.859828 | 2.347570 | 2.347570|
 |                 stroke | 0.948060 | 2.232434 | 2.232434|
@@ -50,11 +50,11 @@ Three scores were used to measure feature importance. According to the following
 |     hvyalcoholconsump | 1.035004 | 0.419417 | 1.035004 |
 |             cholcheck | 0.179429 | 1.031916 | 1.031916 |
 |         anyhealthcare | 0.833940 | 1.008559 | 1.008559 |
-\
+
 We observe that having a heart disease or attack is a good indicator of diabetes, along with ever having a stroke and having difficulty walking. Males are slightly more likely to have diabetes than females.
 Interestingly, heavy alcohol consumption is slightly related to not having diabetes, however other effects on health are wellknown.
-| MUTUAL INFORMATION SCORE |
-|--------------------------|
+| MUTUAL INFORMATION SCORE |   |
+|--------------------------|---|
 |                 Feature |   score|
 |highbp                 | 0.034604|
 |age                   |  0.019799|
@@ -73,7 +73,7 @@ Interestingly, heavy alcohol consumption is slightly related to not having diabe
 |nodocbccost            | 0.000508|
 |sex                    | 0.000482|
 |anyhealthcare          | 0.000120|
-\
+
 According to the mutual information score, the most powerful indicators are general health, high blood presure, age, high cholesterol and difficulty walking.
 ## Model training 
 Three models were trained and compared to find the most accurate according to the ROC AUC score. The following are the results of the models trained on the complete dataset:
